@@ -54,9 +54,6 @@ def handle_message(event):
     elif '我想看電影' in msg:
         message = buttons_message()
         line_bot_api.reply_message(event.reply_token, message)
-    elif '註冊會員' in msg:
-        message = Confirm_Template()
-        line_bot_api.reply_message(event.reply_token, message)
     elif '旋轉木馬' in msg:
         message = Carousel_Template()
         line_bot_api.reply_message(event.reply_token, message)

@@ -54,41 +54,41 @@ def buttons_message():
     message = TemplateSendMessage(
         alt_text='看電影前，先聊個天...',
         template=ButtonsTemplate(
-            thumbnail_image_url="https://imgur.com/dX461RL",
-            title="今晚，我想看來點...？",
-            text="選個電影種類，讓我更好推薦你！",
+            thumbnail_image_url="https://i.imgur.com/uKYgfVs.jpg",
+            title='今晚，我想看來點...？',
+            text='選個電影種類，讓我更好推薦你！',
             actions=[
                 MessageTemplateAction(
-                    label="Action/動作",
-                    text="Action/動作"
+                    label='Action 動作',
+                    text='Action 動作'
                 ),
                 MessageTemplateAction(
-                    label="Adventure/冒險",
-                    text="Adventure/冒險"
+                    label='Adventure 冒險',
+                    text='Adventure 冒險'
                 ),
                 MessageTemplateAction(
-                    label="Animation/動畫",
-                    text="Animation/動畫"
+                    label='Animation 動畫',
+                    text='Animation 動畫'
                 ),
                 MessageTemplateAction(
-                    label="Drama/劇情",
-                    text="Drama/劇情"
+                    label='Drama 劇情',
+                    text='Drama 劇情'
                 ),
                 MessageTemplateAction(
-                    label="Science fiction/科幻",
-                    text="Science fiction/科幻"
+                    label='Science fiction 科幻',
+                    text='Science fiction 科幻'
                 ),
                 MessageTemplateAction(
-                    label="Horror/恐怖",
-                    text="Horror/恐怖"
+                    label='Horror 恐怖',
+                    text='Horror 恐怖'
                 ),
                 MessageTemplateAction(
-                    label="Romance/浪漫",
-                    text="Romance/浪漫"
+                    label='Romance 浪漫',
+                    text='Romance 浪漫'
                 ),
                 MessageTemplateAction(
-                    label="Drama/劇情",
-                    text="Drama/劇情"
+                    label='Drama 劇情',
+                    text='Drama 劇情'
                 )
             ]
         )
