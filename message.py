@@ -52,49 +52,43 @@ def imagemap_message():
 #TemplateSendMessage - ButtonsTemplate (按鈕介面訊息)
 def buttons_message():
     message = TemplateSendMessage(
-        alt_text='好消息來囉～',
+        alt_text='看電影前，先聊個天...',
         template=ButtonsTemplate(
-            thumbnail_image_url="https://pic2.zhimg.com/v2-de4b8114e8408d5265503c8b41f59f85_b.jpg",
-            title="是否要進行抽獎活動？",
-            text="輸入生日後即獲得抽獎機會",
+            thumbnail_image_url="https://imgur.com/dX461RL",
+            title="今晚，我想看來點...？",
+            text="選個電影種類，讓我更好推薦你！",
             actions=[
-                DatetimePickerTemplateAction(
-                    label="請選擇生日",
-                    data="input_birthday",
-                    mode='date',
-                    initial='1990-01-01',
-                    max='2019-03-10',
-                    min='1930-01-01'
+                MessageTemplateAction(
+                    label="Action/動作",
+                    text="Action/動作"
                 ),
                 MessageTemplateAction(
-                    label="看抽獎品項",
-                    text="有哪些抽獎品項呢？"
-                ),
-                URITemplateAction(
-                    label="免費註冊享回饋",
-                    uri="https://tw.shop.com/nbts/create-myaccount.xhtml?returnurl=https%3A%2F%2Ftw.shop.com%2F"
-                )
-            ]
-        )
-    )
-    return message
-
-#TemplateSendMessage - ConfirmTemplate(確認介面訊息)
-def Confirm_Template():
-
-    message = TemplateSendMessage(
-        alt_text='是否註冊成為會員？',
-        template=ConfirmTemplate(
-            text="是否註冊成為會員？",
-            actions=[
-                PostbackTemplateAction(
-                    label="馬上註冊",
-                    text="現在、立刻、馬上",
-                    data="會員註冊"
+                    label="Adventure/冒險",
+                    text="Adventure/冒險"
                 ),
                 MessageTemplateAction(
-                    label="查詢其他功能",
-                    text="查詢其他功能"
+                    label="Animation/動畫",
+                    text="Animation/動畫"
+                ),
+                MessageTemplateAction(
+                    label="Drama/劇情",
+                    text="Drama/劇情"
+                ),
+                MessageTemplateAction(
+                    label="Science fiction/科幻",
+                    text="Science fiction/科幻"
+                ),
+                MessageTemplateAction(
+                    label="Horror/恐怖",
+                    text="Horror/恐怖"
+                ),
+                MessageTemplateAction(
+                    label="Romance/浪漫",
+                    text="Romance/浪漫"
+                ),
+                MessageTemplateAction(
+                    label="Drama/劇情",
+                    text="Drama/劇情"
                 )
             ]
         )
