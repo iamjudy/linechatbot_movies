@@ -69,26 +69,6 @@ def buttons_message():
                 MessageTemplateAction(
                     label='Animation 動畫',
                     text='Animation 動畫'
-                ),
-                MessageTemplateAction(
-                    label='Drama 劇情',
-                    text='Drama 劇情'
-                ),
-                MessageTemplateAction(
-                    label='Science fiction 科幻',
-                    text='Science fiction 科幻'
-                ),
-                MessageTemplateAction(
-                    label='Horror 恐怖',
-                    text='Horror 恐怖'
-                ),
-                MessageTemplateAction(
-                    label='Romance 浪漫',
-                    text='Romance 浪漫'
-                ),
-                MessageTemplateAction(
-                    label='Drama 劇情',
-                    text='Drama 劇情'
                 )
             ]
         )
