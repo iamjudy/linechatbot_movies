@@ -71,8 +71,8 @@ def buttons_message():
                     text='Animation 動畫'
                 ),
                 MessageTemplateAction(
-                    label="Drama/劇情",
-                    text="Drama/劇情"
+                    label="Drama 劇情",
+                    text="Drama 劇情"
                 )
             ]
         )
