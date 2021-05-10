@@ -69,6 +69,10 @@ def buttons_message():
                 MessageTemplateAction(
                     label='Animation 動畫',
                     text='Animation 動畫'
+                ),
+                MessageTemplateAction(
+                    label="Drama/劇情",
+                    text="Drama/劇情"
                 )
             ]
         )
