@@ -8,7 +8,7 @@ from linebot.exceptions import (
 )
 from linebot.models import *
 
-
+import pandas
 #======這裡是呼叫的檔案內容=====
 from message import *
 from new import *
@@ -52,6 +52,9 @@ def handle_message(event):
         message = imagemap_message()
         line_bot_api.reply_message(event.reply_token, message)
     elif '我想看電影' in msg:
+        message = buttons_message()
+        line_bot_api.reply_message(event.reply_token, message)
+    elif 'Action 動作' in msg:
         message = buttons_message()
         line_bot_api.reply_message(event.reply_token, message)
     elif '旋轉木馬' in msg:
